@@ -1,7 +1,5 @@
 package aplicacao;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import exceptions.ParametrosInvalidosException;
@@ -27,7 +25,6 @@ public class Contador {
 		}
 		
 		sc.close();
-
 	}
 	
 	static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException{
@@ -36,7 +33,7 @@ public class Contador {
 		}else {
 			int contagem = parametroDois - parametroUm;
 			for(int i = 0; i <= contagem; i++) {
-				System.out.printf("%d%c", i, i==contagem ? 00:44);
+				System.out.printf("%d%c ", i, i==contagem ? 00:44);
 				//https://pt.stackoverflow.com/questions/534106/quero-imprimir-os-valores-separados-por-virgulas-mas-no-final-fica-uma-virgula-q
 			} 
 			
